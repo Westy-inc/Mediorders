@@ -7,13 +7,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
+public class Medilist {
     @Autowired
     private Medlistrepo medilistrepo;
 
-    public List<WebApplication> getAllmeds(){
-        List<WebApplication> medi = new ArrayList<>();
+    public List<medlist> getAllMeds(){
+        List<medlist> medi = new ArrayList<>();
         medilistrepo.findAll()
         .forEach(medi::add);
+        return medi;
+    }
+
+    public List<medlist> addMeds(medlist mediname){
+        List<medlist> medi = new ArrayList<>();
+        medilistrepo.save(mediname);
         return medi;
     }
 
