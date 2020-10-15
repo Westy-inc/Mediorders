@@ -7,13 +7,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
+<<<<<<< Updated upstream
 public class Medilist {
+=======
+public class Medilist{
+>>>>>>> Stashed changes
     @Autowired
-    private Medlistrepo medilistrepo;
+    private Medlistrepo medlisrepo;
 
+<<<<<<< Updated upstream
     public List<medlist> getAllMeds(){
         List<medlist> medi = new ArrayList<>();
         medilistrepo.findAll()
+=======
+    public List<medlist> getAllmeds(){
+        List<medlist> medi = new ArrayList<>();
+        medlisrepo.findAll()
+>>>>>>> Stashed changes
         .forEach(medi::add);
         return medi;
     }
