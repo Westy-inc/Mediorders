@@ -5,27 +5,21 @@
     <title>Medical inventory</title>
 </head>
 <body>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" />
     <h1>Medicine list</h1>
-    <table>
+    <table class="table table-md table-bordered">
         <thead>
-            <tr>
-                <th>ID</th>
-                <th>Medicine Name</th>
-                <th></th>
-                <th></th>
-                <th></th>
+            <tr style="text-align: center; vertical-align: middle">
+                <th scope="col">ID</th>
+                <th scope="col">Medicine Name</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody style="text-align: center; vertical-align: middle">
             <tr th:each="medlist : ${medlist}">
                 <td th:text="${medlist.id}">001</td>
                 <td th:text="${medlist.mediname}">paracetamol</td>
-                <td></td>
-                <td></td>
             </tr>
-
         </tbody>
     </table>
-
 </body>
 </html>
