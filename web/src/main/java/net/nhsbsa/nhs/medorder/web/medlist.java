@@ -2,6 +2,7 @@ package net.nhsbsa.nhs.medorder.web;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.util.List;
 
 @Entity
 public class medlist {
@@ -17,12 +18,16 @@ public medlist(String id, String mediname){
         this.id=id;
         this.Mediname=mediname;
 }
-public String getId(){
+
+
+
+    public String getId(){
         return id;
 }
 public void setId(String id){
         this.id=id;
 }
+
 public String getMediname(){
         return Mediname; }
 

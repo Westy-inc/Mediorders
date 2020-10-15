@@ -7,21 +7,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class Medilist {
+public class MedilistService {
     @Autowired
     private Medlistrepo medlisrepo;
 
     public List<medlist> getAllmeds(){
+
+
+    public List<medlist> getAllMeds(){
         List<medlist> medi = new ArrayList<>();
         medlisrepo.findAll()
         .forEach(medi::add);
         return medi;
     }
 
-    public void addMeds(medlist mediname){
-        //List<medlist> medi = new ArrayList<>();
-        medlisrepo.save(mediname);
-        //return medi;
+    public void addMeds(medlist mediname);
+        medlisrepo.save(Mediname);
     }
 
 }

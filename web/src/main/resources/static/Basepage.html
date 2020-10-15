@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Medical inventory</title>
+</head>
+<body>
+    <h1>Medicine list</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Medicine Name</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="medlist : ${medlist}">
+                <td th:text="${medlist.id}">001</td>
+                <td th:text="${medlist.mediname}">paracetamol</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
