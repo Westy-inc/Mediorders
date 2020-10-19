@@ -6,7 +6,6 @@ import javax.persistence.Table;
 import java.util.List;
 
 @Entity
-@Table(name = "medi-list")
 public class medlist {
     @Id
     private long id;
