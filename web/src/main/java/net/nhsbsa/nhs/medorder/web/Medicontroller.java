@@ -13,14 +13,10 @@ public class Medicontroller {
     @Autowired
     private MedilistService medilist;
 
-    @RequestMapping("/meds")
+
     public List<medlist>getAllMeds(){
         return medilist.getAllmeds();
 
-    }
-    @RequestMapping("/hi")
-    public String hi(){
-        return "hi";
     }
 
 
