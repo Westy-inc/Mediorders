@@ -11,18 +11,16 @@ public class MedilistService {
     @Autowired
     private Medlistrepo medlisrepo;
 
-    public List<medlist> getAllmeds(){
-
-
-    public List<medlist> getAllMeds(){
-        List<medlist> medi = new ArrayList<>();
-        medlisrepo.findAll()
-        .forEach(medi::add);
-        return medi;
+    public List<medlist> getAllmeds() {
+            List<medlist> medi = new ArrayList<>();
+            medlisrepo.findAll()
+                    .forEach(medi :: add);
+            return medi;
+        }
+    public void addMeds(medlist mediname){
+        medlisrepo.save(mediname);
     }
 
-    public void addMeds(medlist mediname);
-        medlisrepo.save(Mediname);
-    }
+
 
 }
