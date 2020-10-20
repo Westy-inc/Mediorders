@@ -15,7 +15,7 @@ public class MedilistService {
     @Autowired
     private Medlistrepo medlisrepo;
 
-     //@RequestMapping("/")
+
     public List<medlist> getAllmeds() {
             List<medlist> medi = new ArrayList<>();
             medlisrepo.findAll()

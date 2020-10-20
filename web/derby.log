@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Mon Oct 19 13:16:39 BST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0175-40ca-4357-00000ba6f928 
+on database directory memory:/Users/KIEWE/Documents/GitHub/Mediorders/web/cd561917-07e6-4144-8e7f-b88acfdd7ba0 with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
+Loaded from file:/Users/KIEWE/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=AdoptOpenJDK
+java.runtime.version=1.8.0_265-b01
+user.dir=/Users/KIEWE/Documents/GitHub/Mediorders/web
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.15.7
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

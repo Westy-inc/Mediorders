@@ -9,25 +9,35 @@ public class medlist {
     private long id;
     private String Mediname;
 
-    public medlist(){
+    public medlist() {
 
     }
-public medlist(long id, String mediname){
-        super();
-        this.id=id;
-        this.Mediname=mediname;
-}
-public long getId(){
-        return id;
-}
-    public void setId(final long id){
-        this.id=id;
-}
-public String getMediname(){
-        return Mediname; }
 
-public String setMediname(final String Mediname){
-        return  this.Mediname; }
+    public String medname() {
+        return this.Mediname;
 
     }
+
+    public long medid() {
+        return this.id;
+    }
+
+    public long getId() {
+        return this.id;
+
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+
+    public String getMediname() {
+        return this.Mediname;
+    }
+
+    public void setMediname(String Mediname) {
+        this.Mediname = Mediname;
+    }
+}
 
