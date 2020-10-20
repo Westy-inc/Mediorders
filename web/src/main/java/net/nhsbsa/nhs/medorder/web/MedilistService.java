@@ -15,14 +15,14 @@ public class MedilistService {
     @Autowired
     private Medlistrepo medlisrepo;
 
-     @RequestMapping("/index")
+     //@RequestMapping("/")
     public List<medlist> getAllmeds() {
             List<medlist> medi = new ArrayList<>();
             medlisrepo.findAll()
                     .forEach(medi :: add);
             return medi;
         }
-        @PostMapping("/index")
+        @PostMapping("/")
     public void addMeds(@RequestBody medlist mediname){
         medlisrepo.save(mediname);
     }
