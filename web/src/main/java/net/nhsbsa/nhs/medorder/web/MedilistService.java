@@ -22,11 +22,9 @@ public class MedilistService {
                     .forEach(medi :: add);
             return medi;
         }
-        @PostMapping("/")
+        @PostMapping("/med")
     public void addMeds(@RequestBody medlist mediname){
         medlisrepo.save(mediname);
     }
-
-
 
 }

@@ -1,33 +1,32 @@
 package net.nhsbsa.nhs.medorder.web;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
+
 
 @Entity
+@Table(name = "Medi")
 public class medlist {
-    @Id
+    @Id @GeneratedValue
+    @Column(name = "id")
     private long id;
+
+    @Column(name = "Mediname")
     private String Mediname;
 
-    public medlist() {
 
-    }
 
     public String medname() {
         return this.Mediname;
 
     }
 
-    public long medid() {
-        return this.id;
-    }
 
     public long getId() {
         return this.id;
 
     }
 
-    public void setId(long id) {
+    public void setId(final long id) {
         this.id = id;
     }
 
@@ -36,8 +35,9 @@ public class medlist {
         return this.Mediname;
     }
 
-    public void setMediname(String Mediname) {
+    public void setMediname(final String Mediname) {
         this.Mediname = Mediname;
     }
+
 }
 
