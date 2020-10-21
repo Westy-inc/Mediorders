@@ -6,38 +6,29 @@ import javax.persistence.*;
 @Entity
 @Table(name = "Medi")
 public class medlist {
-    @Id @GeneratedValue
+
     @Column(name = "id")
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
     @Column(name = "Mediname")
     private String Mediname;
 
-
-
-    public String medname() {
-        return this.Mediname;
-
-    }
-
-
     public long getId() {
-        return this.id;
-
+        return id;
     }
 
-    public void setId(final long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
-
     public String getMediname() {
-        return this.Mediname;
+        return Mediname;
     }
 
-    public void setMediname(final String Mediname) {
-        this.Mediname = Mediname;
+    public void setMediname(String mediname) {
+        this.Mediname = mediname;
     }
-
 }
 
